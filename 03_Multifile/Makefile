@@ -34,9 +34,6 @@ test: prog prog-a prog-so
 	cmp result1.test result2.test
 	cmp result1.test result3.test
 	cmp result2.test result3.test
-	cmp error1.test error2.test
-	cmp error1.test error3.test
-	cmp error2.test error3.test
 
 	./prog $(ONE_PARAMETER) 1> result1.test 2> error1.test
 	./prog-a $(ONE_PARAMETER) 1> result2.test 2> error2.test
